@@ -1,0 +1,6 @@
+{
+  "name": "Prepaid Card Lifecycle Visualizer",
+  "description": "An interactive, step-by-step animated visualizer and sandbox simulator for the end-to-end prepaid card lifecycle and system integrations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
