@@ -48,7 +48,7 @@ export default function App() {
                 </span>
               </div>
               <p className="text-[10px] text-gray-400 mt-0.5 font-mono">
-                System Engineering walkthroughs, API Specifications, Concurrency Controls, and Kafka Broker Simulation
+                Developed By <span className="text-emerald-400 font-bold">Asif Maner</span> • Walkthroughs, API Specs, and Kafka Simulator
               </p>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function App() {
         {/* Informative Footnote bar */}
         <footer className="mt-12 py-6 border-t border-[#131622] flex flex-col md:flex-row justify-between items-center text-[11px] text-[#636881] font-mono gap-4">
           <div>
-            <span>Prepaid Card Payment System Architecture Series • PCI-DSS & ISO 8583</span>
+            <span>Prepaid Card Payment System Architecture Series • Developed By <span className="text-white font-bold">Asif Maner</span></span>
           </div>
           <div className="flex items-center space-x-6">
             <span>Server State: Mock HSM Virtualized</span>
