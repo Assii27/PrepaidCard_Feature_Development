@@ -1,1 +1,166 @@
 @import "tailwindcss";
+
+/* -------------------------------------------------------------
+ * DAY & NIGHT MODE CSS VARIABLE ROOT DEFINITIONS
+ * ------------------------------------------------------------- */
+:root {
+  --bg-app: #08090f;
+  --bg-card: #12141c;
+  --bg-header: rgba(12, 13, 21, 0.9);
+  --bg-inner: #07080d;
+  --bg-panel: rgba(17, 19, 34, 0.8);
+  --border-primary: #1b1e2f;
+  --border-secondary: #23273a;
+  --border-card: #1b1f32;
+  --border-tertiary: #212642;
+  --text-primary: #ffffff;
+  --text-secondary: #eaeaea;
+  --text-muted: #a2a3b3;
+  --text-dark: #636881;
+  --grid-color: #1e243a;
+}
+
+/* Day Mode (Light Theme overrides) */
+.theme-light {
+  --bg-app: #f4f6fa;
+  --bg-card: #ffffff;
+  --bg-header: rgba(255, 255, 255, 0.9);
+  --bg-inner: #f1f5f9;
+  --bg-panel: rgba(248, 250, 252, 0.9);
+  --border-primary: #cbd5e1;
+  --border-secondary: #e2e8f0;
+  --border-card: #cbd5e1;
+  --border-tertiary: #cbd5e1;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #475569;
+  --text-dark: #64748b;
+  --grid-color: #cbd5e1;
+}
+
+/* -------------------------------------------------------------
+ * SEAMLESS COMPONENT COLOR OVERRIDES FOR LIGHT THEME
+ * ------------------------------------------------------------- */
+.theme-light {
+  background-color: var(--bg-app) !important;
+  color: var(--text-secondary) !important;
+}
+
+/* Background class mappings */
+.theme-light .bg-\[\#08090f\] { background-color: var(--bg-app) !important; }
+.theme-light .bg-\[\#12141c\] { background-color: var(--bg-card) !important; }
+.theme-light .bg-\[\#0c0d15\]\/90 { background-color: var(--bg-header) !important; }
+.theme-light .bg-\[\#07080d\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#111322\]\/80 { background-color: var(--bg-panel) !important; }
+.theme-light .bg-\[\#111322\] { background-color: var(--bg-panel) !important; }
+.theme-light .bg-\[\#10121e\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#161a2c\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#08090e\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#0b0c13\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#0b0c12\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#11131e\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#111422\] { background-color: var(--bg-panel) !important; }
+.theme-light .bg-\[\#191d32\] { background-color: var(--bg-panel) !important; }
+.theme-light .bg-\[\#0d0e19\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#11131f\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#111424\] { background-color: var(--bg-card) !important; }
+.theme-light .bg-\[\#191b2b\] { background-color: var(--bg-panel) !important; }
+.theme-light .bg-\[\#191b2c\] { background-color: var(--bg-panel) !important; }
+.theme-light .bg-\[\#141724\] { background-color: var(--bg-panel) !important; }
+.theme-light .bg-\[\#131526\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#151824\]\/60 { background-color: var(--bg-inner) !important; }
+.theme-light .bg-\[\#151824\] { background-color: var(--bg-panel) !important; }
+.theme-light .bg-\[\#121421\] { background-color: var(--bg-inner) !important; }
+.theme-light .bg-gradient-to-r.from-\[\#1d2243\].to-\[\#252a4f\] {
+  background-image: linear-gradient(to right, #cbd5e1, #e2e8f0) !important;
+}
+
+/* Flowchart action button overrides in light mode */
+.theme-light .bg-\[\#1a1f36\] {
+  background-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+/* Border class mappings */
+.theme-light .border-\[\#1b1e2f\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#23273a\] { border-color: var(--border-secondary) !important; }
+.theme-light .border-\[\#1b1f32\] { border-color: var(--border-card) !important; }
+.theme-light .border-\[\#212642\] { border-color: var(--border-tertiary) !important; }
+.theme-light .border-\[\#1c2033\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#2b3558\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#171926\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#1d2136\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#1e223b\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#232a48\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#262d4c\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#272d47\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#2b314e\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#212640\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#1c1f30\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#21263d\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#191b2c\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#131726\] { border-color: var(--border-primary) !important; }
+.theme-light .border-\[\#1d2134\] { border-color: var(--border-primary) !important; }
+.theme-light .border-t.border-\[\#131622\] { border-color: var(--border-primary) !important; }
+
+/* Text Class Mappings (Ensuring readability) */
+.theme-light .text-white { color: var(--text-primary) !important; }
+.theme-light .text-gray-100 { color: var(--text-primary) !important; }
+.theme-light .text-gray-200 { color: var(--text-primary) !important; }
+.theme-light .text-gray-300 { color: var(--text-secondary) !important; }
+.theme-light .text-gray-400 { color: var(--text-muted) !important; }
+.theme-light .text-\[\#eaeaea\] { color: var(--text-secondary) !important; }
+.theme-light .text-\[\#a2a3b3\] { color: var(--text-muted) !important; }
+.theme-light .text-\[\#636881\] { color: var(--text-dark) !important; }
+
+/* Text Headings */
+.theme-light h1, 
+.theme-light h2, 
+.theme-light h3, 
+.theme-light h4, 
+.theme-light h5, 
+.theme-light h6,
+.theme-light .font-bold.text-white,
+.theme-light .font-extrabold {
+  color: var(--text-primary) !important;
+}
+
+/* Ensure selected interactive tabs and active item colors remain legible */
+.theme-light .bg-indigo-950 {
+  background-color: #e2e8f0 !important;
+  color: #3b53d0 !important;
+}
+.theme-light .text-indigo-400 {
+  color: #3b53d0 !important;
+}
+.theme-light .bg-indigo-950\/80 {
+  background-color: #cbd5e1 !important;
+  color: #3b53d0 !important;
+}
+.theme-light .border-indigo-900 {
+  border-color: #94a3b8 !important;
+}
+
+/* Form input elements */
+.theme-light select,
+.theme-light input {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-primary) !important;
+}
+
+/* Hover highlights for buttons & tabs */
+.theme-light .hover\:bg-\[\#131726\]\/40:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+.theme-light .hover\:border-\[\#2b3558\]:hover {
+  border-color: #3b53d0 !important;
+}
+.theme-light .hover\:bg-\[\#151824\]:hover {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Background grid pattern switch */
+.theme-light .bg-\[radial-gradient\(\#1e243a_1px\,transparent_1px\)\] {
+  background-image: radial-gradient(var(--grid-color) 1px, transparent 1px) !important;
+}
